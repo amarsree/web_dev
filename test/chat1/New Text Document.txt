@@ -1,0 +1,6 @@
+<?php 
+// defines database connection data 
+define('DB_HOST', '/*Hostname*/');define('DB_USER', '/*MySQL Userna-me*/'); 
+define('DB_PASSWORD', '/*MySQL Pa-ssword*/'); 
+define('DB_DATABASE', '/*Database Name*/'); 
+?>  

@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+m.colincowie.com	TRUE	/	FALSE	1999999999	ASPSESSIONIDAQRSQBDT	FGHPAJFBGLPOODDCDIGKBDMC
+m.colincowie.com	TRUE	/	FALSE	1999999999	ASPSESSIONIDCATTTCCR	CJBLCIFBNOEHNOOAIKPFFKEL
+.quantserve.com	TRUE	/	FALSE	1999999999	mc	577ab4b4-87bbe-9e057-97055
+

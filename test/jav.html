@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>java</title>	
+<script type="text/javascript">
+function fun() {
+		var mno=document.getElementById("num").value;
+
+ if(mno == "") { 
+ 	alert("Mobile number  should not be Empty!"); 
+ 	return false;
+ }
+  var mn =/^[A-Za-z ]$/;
+ else if(!mn.test(mno)) {
+alert("Mobile number should not be charactors");
+}
+/*  var mb = /^[0-9]{10}$/; //Regular Expression to match a value with exactly 10 digits 
+  if(!mb.test(mno)) {
+   alert("Invalid Mobile Number! Enter a valid 10 Digit Mobile Number"); 
+   return false;
+}
+*/
+//var mc = /^{10}$/;
+//if (!mc.test(mno)) {
+//	alert('Enter 10 digits');
+//	return false;
+//}
+
+}
+</script>
+</head>
+<body>
+<center><h1>dhtljljs</h1></center>
+	<input type="textbox"  value="" id="num">
+	<input type="button"  value="seb" onclick="fun()">
+
+
+</body>
+</html>

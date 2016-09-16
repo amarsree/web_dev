@@ -1,0 +1,17 @@
+body {
+  color: white;
+  background-color: red;
+background:url('bg.jpg')no-repeat;
+background-size:100%;
+height: 140px;
+display:block;
+padding:0 !important;
+margin:0;
+}
+h1{
+	text-align: center;
+
+}
+table {
+	
+}
