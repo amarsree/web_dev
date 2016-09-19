@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create text pictures with phptext class.</title>
+<link href="./css/style.css" rel="stylesheet">
+<script src="./js/jquery.min.js"></script>
+<script>
+$(document).on('change', '#user_name', function () {	
+	var data = "Text="+$(this).val();
+	$.ajax({
+		type: 'POST',
+		url:  "./demo_submit.php",
+		data: data,
+		dataType:"json",
+		success: function(html) {
+			obj = JSON.parse(JSON.stringify(html));
+			if(obj.status){
+				alert(obj.status);
+				alert(obj.image);
+
+				$("#imgArea>img").prop('src',obj.image);				
+			}
+		}
+	});		
+});
+</script>
+</head>
+
+<body>
+<div id="frame0">
+  <h1>Create text pictures with phptext class</h1>
+  <p>More tutorials <a href="http://www.w3schools.in/">http://www.w3schools.in/</a></p>
+</div>
+<br>
+<div id="imgContainer">
+  <form enctype="multipart/form-data" action="image_upload_demo_submit.php" method="post" name="image_upload_form" id="image_upload_form">
+    <div id="imgArea"><img src="./img/default.jpg"></div>
+    <p>
+      <label for="user_name">Name: </label>
+      <input type="text" name="user_name" id="user_name">
+    </p>
+  </form>
+  <span class="htlpText">To view demo please enter some text in field and click outside.</span>
+</div>
+</body>
+</html>
